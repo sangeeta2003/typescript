@@ -64,3 +64,4 @@ function doSomething(keyPressed) {
     if (keyPressed == direction.Up) {
     }
 }
+console.log(direction.Up)

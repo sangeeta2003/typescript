@@ -70,14 +70,24 @@
 
 
 //  enum 
-enum direction{
-    Up, //0
-    Down, //1
-    Left, //2
-    Right //3
+// enum direction{
+//     Up, //0
+//     Down, //1
+//     Left, //2
+//     Right //3
+// }
+// function doSomething(keyPressed:direction){
+//     if(keyPressed == direction.Up){
+
+//     }
+// }
+
+
+// generic
+function identity<T>(arg:T){
+    return arg;
 }
-function doSomething(keyPressed:direction){
-    if(keyPressed == direction.Up){
-        
-    }
-}
+let output1 = identity<string>("my string")
+let output2 = identity<number>(100)
+
+output1.toUpperCase(); 
