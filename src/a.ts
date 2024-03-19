@@ -44,26 +44,40 @@
 
 
 // interfeces
-interface Person{
-    name:string;
-    age:number;
-greet(phrase:string):void;
-}
+// interface Person{
+//     name:string;
+//     age:number;
+// greet(phrase:string):void;
+// }
 
- class Employee implements Person{
-    name :string;
-    age:number;
+//  class Employee implements Person{
+//     name :string;
+//     age:number;
  
 
- constructor(n:string,a:number){
-    this.name=n;
-    this.age=a;
+//  constructor(n:string,a:number){
+//     this.name=n;
+//     this.age=a;
 
- }
- greet(phrase: string): void {
-     console.log(`$(phase) $(this.name)`);
- }
- }
+//  }
+//  greet(phrase: string): void {
+//      console.log(`$(phase) $(this.name)`);
+//  }
+//  }
 
- const e = new Employee("sangeeta",20);
- console.log(e.name);
+//  const e = new Employee("sangeeta",20);
+//  console.log(e.name);
+
+
+//  enum 
+enum direction{
+    Up, //0
+    Down, //1
+    Left, //2
+    Right //3
+}
+function doSomething(keyPressed:direction){
+    if(keyPressed == direction.Up){
+        
+    }
+}
