@@ -3,13 +3,20 @@
 //     console.log("hello" + firstName)
 // }
 // greet("sangeeta")
-// function isLegal(age:number):boolean{
-//     if(age > 18){
-//         return true;
-//     }else{
-//         return false;
-//     }
-// }
-// let x = isLegal(18)
-// f
-const greet = (name) => `Hello, ${name}!`;
+;
+function isLegal(user) {
+    if (user.age < 18) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+function greet(user) {
+    console.log("hi there" + user.firstname);
+}
+isLegal({
+    firstname: "sangeeta",
+    lastname: "mishra",
+    age: 20
+});
