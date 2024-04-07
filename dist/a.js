@@ -1,18 +1,17 @@
 "use strict";
-// function greet(firstName:string){
+// function greet1(firstName:string){
 //     console.log("hello" + firstName)
 // }
-// greet("sangeeta")
-// function isLegal(age:number):boolean{
+// greet1("sangeeta")
+// function isLegal1(age:number):boolean{
 //     if(age > 18){
 //         return true;
 //     }else{
 //         return false;
 //     }
 // }
-// let x = isLegal(18)
-// f
-// const greet = (name:string) => `Hello, ${name}!`;
+// let x = isLegal1(18)
+// const greet2 = (name:string) => `Hello, ${name}!`;
 // interface User{
 //     firstname:string;
 //     lastname:string;
@@ -33,7 +32,7 @@
 //     lastname:"mishra",
 //     age:20
 // })
-// interfeces
+// // interfeces
 // interface Person{
 //     name:string;
 //     age:number;
@@ -52,16 +51,21 @@
 //  }
 //  const e = new Employee("sangeeta",20);
 //  console.log(e.name);
-//  enum 
-var direction;
-(function (direction) {
-    direction[direction["Up"] = 0] = "Up";
-    direction[direction["Down"] = 1] = "Down";
-    direction[direction["Left"] = 2] = "Left";
-    direction[direction["Right"] = 3] = "Right"; //3
-})(direction || (direction = {}));
-function doSomething(keyPressed) {
-    if (keyPressed == direction.Up) {
-    }
-}
-console.log(direction.Up)
+// //  enum 
+// enum direction{
+//     Up, //0
+//     Down, //1
+//     Left, //2
+//     Right //3
+// }
+// function doSomething(keyPressed:direction){
+//     if(keyPressed == direction.Up){
+//     }
+// }
+// // generic
+// function identity<T>(arg:T){
+//     return arg;
+// }
+// let output1 = identity<string>("my string")
+// let output2 = identity<number>(100)
+// output1.toUpperCase(); 
